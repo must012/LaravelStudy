@@ -12,8 +12,10 @@
 */
 
 Route::get('/',function (){
-    return view('welcome',[
-        "name"=>"Sujae!",
-        "greeting"=>"Good! "
-    ]);
+
+
+    $items = ["apple", "peach", "melon"];
+
+    return view('welcome',['items' => $items]);
+
 });
